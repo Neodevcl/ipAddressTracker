@@ -5,7 +5,7 @@ const map = L.map('miMapa', { scrollWheelZoom: false });
 let marker;
 
 const myIcon = L.icon({
-    iconUrl: '../images/icon-location.svg',
+    iconUrl: './images/icon-location.svg',
     iconSize: [50, 60],
     iconAnchor: [22, 94],
     popupAnchor: [-3, -76],

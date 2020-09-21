@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+
+    <title>Frontend Mentor | IP Address Tracker</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+
+<body>
+
+    <!-- IP Address Tracker Search for any IP address or domain IP Address Location Timezone UTC
+    add offset value dynamically using the API 
+    ISP -->
+    <div class="contenedor">
+        <div class="header">
+            <h1 class="titulo">IP Address Tracker</h1>
+
+            <form id="formulario">
+                <div class="contenedor-buscador">
+                    <input type="text" class="buscador" placeholder="Search for any IP address or domain">
+                    <button type="submit"><img src="./images/icon-arrow.svg" alt=""></button>
+                </div>
+            </form>
+        </div>
+        <div class="contenedor-tarjeta">
+            <div class="tarjeta">
+                <div>
+                    <p class="titulo">ip address</p>
+                    <p id="ip" class="subtitulo">---.---.---.---</p>
+                </div>
+                <div class="vl"></div>
+                <div>
+                    <p class="titulo">location</p>
+                    <p class="subtitulo"><span id="city">Your Address</span> <span id="region"></span> <span id="postalCode"></span></p>
+                </div>
+                <div class="vl"></div>
+                <div>
+                    <p class="titulo">Timezone</p>
+                    <p id="timezone" class="subtitulo">Your timezone</p>
+                </div>
+                <div class="vl"></div>
+                <div>
+                    <p class="titulo">isp</p>
+                    <p id="isp" class="subtitulo">Your ISP</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mapa" id="miMapa">
+        </div>
+    </div>
+
+    <!-- <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
